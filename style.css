@@ -6,6 +6,7 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 .card{
     background: white;
@@ -43,6 +44,8 @@ button{
     border: none;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s ease;
+
 
 }
 button[type="submit"]{
@@ -63,4 +66,20 @@ button[type="submit"]{
     font-size: 18px;
     font-weight: bold;
     color: #333;
+}
+label{
+    display:block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+button:hover{
+    opacity:0.9;
+
+}
+#reset:hover{
+    background: #b3b3b3;
+
+}
+button[type="submit"]:hover{
+    background:#5a67d8
 }

@@ -6,6 +6,11 @@ const resetBtn = document.getElementById("reset");
 const male = ["Ryan", "Ray", "Robin", "Ronald", "Ricky"];
 const Female = ["Naima", "Nami", "Nicole", "Nico", "Niche"];
 
-form.addEventListerner("submit", function (e) {
+form.addEventListerner("submit"), function (e) {
     e.preventDefault();
 }
+const dateValue = document.getElementById("date").value;
+const gender = document.querySelector('input[name = "gender"]: checked');
+
+error.textContent = ''';
+output.textContent=

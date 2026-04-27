@@ -21,7 +21,7 @@ To run this project locally:
 1. Clone the repository:
 
    ```
-   git clone 
+   git clone https://github.com/Naima0987/Akanname-generator.git
    ```
 
 2. Navigate into the project folder:
@@ -42,7 +42,7 @@ To run this project locally:
 
 View the live project here:
 
-
+https://github.com/Naima0987/Akanname-generator.git
 ---
 
 ## Technologies Used

@@ -12,5 +12,3 @@ form.addEventListerner("submit"), function (e) {
 const dateValue = document.getElementById("date").value;
 const gender = document.querySelector('input[name = "gender"]: checked');
 
-error.textContent = ''';
-output.textContent=

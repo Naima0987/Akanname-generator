@@ -58,3 +58,9 @@ button[type="submit"]{
     font-size: 13px;
 
 }
+#output{
+    margin-top:20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}

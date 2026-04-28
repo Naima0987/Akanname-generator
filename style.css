@@ -9,7 +9,7 @@ body{
     height: 100vh;
 }
 .card{
-    background: white;
+    background: rgb(238, 184, 193);
     padding:30px;
     border-radius:15px;
     width: 350px;

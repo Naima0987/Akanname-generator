@@ -24,7 +24,24 @@ form.addEventListener("submit", function (e) {
     error.textContent = "⚠️ Please select your gender";
     return;
   }
-  const date = new Date(dateValue);
+    const date = new Date(dateValue);
+    if (isNaN(date.getTime())) {
+      alert("Invalid date");
+      return;
+    }
+    const day = date.getDate();
+    const month = date.getMonth() + 1;
+    const year = date.getFullYear();
+
+    if (month < 1 || month > 12) {
+      alert("Invalid month selected");
+      return;
+    }
+
+    if (day < 1 || day > 31) {
+      alert("Invalid day selected");
+      return;
+    }
 
   const dayIndex = date.getDay();
 

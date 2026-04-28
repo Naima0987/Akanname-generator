@@ -10,12 +10,16 @@ body{
 }
 .card{
     background: rgb(233, 210, 214);
-    padding:30px;
+    padding:80px;
     border-radius:15px;
-    width: 350px;
+    width: 500px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-
+    transform: scale(1.02);
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
 }
 h1{
     margin-bottom: 5px;

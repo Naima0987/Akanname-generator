@@ -3,8 +3,8 @@ const output = document.getElementById("output");
 const error = document.getElementById("error");
 const resetBtn = document.getElementById("reset");
 
-const male = ["Ryan", "Ray", "Robin", "Ronald", "Ricky", "Rex", "Ralph"];
-const female = ["Naima", "Nami", "Nicole", "Nico", "Niche", "Nora", "Nelly"];
+const male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+const female = ["Akosua", "Adowa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 form.addEventListener("submit", function (e) {
     e.preventDefault();

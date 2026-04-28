@@ -12,8 +12,7 @@ form.addEventListener("submit", function (e) {
   const dateValue = document.getElementById("dob").value;
   const gender = document.querySelector('input[name="gender"]:checked');
 
-  error.textContent = "";
-  output.textContent = "";
+  alert("Please enter valid input");  output.textContent = "";
 
   if (!dateValue) {
     error.textContent = "⚠️ Please select your birth date";

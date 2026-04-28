@@ -29,6 +29,21 @@ form.addEventListener("submit", function (e) {
       alert("Invalid date");
       return;
     }
+
+
+    const date = new Date(dateValue);
+
+    const DD = date.getDate();
+    const MM = date.getMonth() + 1;
+    const year = date.getFullYear();
+
+    const CC = Math.floor(year / 100);
+    const YY = year % 100;
+
+    const rawIndex =
+      (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
+
+    const dayIndex = (Math.floor(rawIndex) + 7) % 7;
     const day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();

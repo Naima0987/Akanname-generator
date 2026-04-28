@@ -42,7 +42,7 @@ To run this project locally:
 
 View the live project here:
 
-https://github.io/Naima0987/Akanname-generator.git
+https://github.com/Naima0987/Akanname-generator.git
 ---
 
 ## Technologies Used

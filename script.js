@@ -7,13 +7,12 @@ const male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 const female = ["Akosua", "Adowa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
+    e.preventDefault();
 
   const dateValue = document.getElementById("dob").value;
   const gender = document.querySelector('input[name="gender"]:checked');
 
-  alert("Please enter valid input");  output.textContent = "";
-
+  error.textContent = "...";
   if (!dateValue) {
     error.textContent = "⚠️ Please select your birth date";
     return;
@@ -29,12 +28,14 @@ form.addEventListener("submit", function (e) {
       return;
     }
 
-
-    const date = new Date(dateValue);
-
     const DD = date.getDate();
     const MM = date.getMonth() + 1;
     const year = date.getFullYear();
+
+    if (year < 1900 || year > new Date().getFullYear()) {
+      alert("Invalid year selected");
+      return;
+    }
 
     const CC = Math.floor(year / 100);
     const YY = year % 100;
@@ -43,21 +44,18 @@ form.addEventListener("submit", function (e) {
       (CC / 4 - 2 * CC - 1 + (5 * YY) / 4 + (26 * (MM + 1)) / 10 + DD) % 7;
 
     const dayIndex = (Math.floor(rawIndex) + 7) % 7;
-    const day = date.getDate();
     const month = date.getMonth() + 1;
-    const year = date.getFullYear();
 
-    if (month < 1 || month > 12) {
+    if (MM < 1 || MM > 12) {
       alert("Invalid month selected");
       return;
     }
 
-    if (day < 1 || day > 31) {
+    if (DD < 1 || DD > 31) {
       alert("Invalid day selected");
       return;
     }
 
-  const dayIndex = date.getDay();
 
   const days = [
     "Sunday",
@@ -76,8 +74,7 @@ form.addEventListener("submit", function (e) {
 
 
 resetBtn.addEventListener("click", function () {
-    
-    form.reset();
-    output.textContent = "";
-    error.textContent = "";
+  form.reset();
+  output.textContent = "";
+  error.textContent = "";
 });

@@ -52,7 +52,7 @@ button[type="submit"]{
     background: #667eea;
     color:white;
 }
-#reset{
+#resetBtn{
     background: #ccc;
 
 }
@@ -76,7 +76,7 @@ button:hover{
     opacity:0.9;
 
 }
-#reset:hover{
+#resetBtn:hover{
     background: #b3b3b3;
 
 }

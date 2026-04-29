@@ -7,9 +7,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url(flag.jpg);
 }
 .card{
-    background: rgb(212, 221, 215);
+    background: rgb(174, 180, 177);
     padding:80px;
     border-radius:15px;
     width: 500px;

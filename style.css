@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: #977777;
+    background: #080807;
     text-align: center;
     margin:0;
     display:flex;
@@ -9,7 +9,7 @@ body{
     height: 100vh;
 }
 .card{
-    background: rgb(64, 158, 90);
+    background: rgb(212, 221, 215);
     padding:80px;
     border-radius:15px;
     width: 500px;
